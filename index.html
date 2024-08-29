@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance Counselor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Guidance Dashboard</div>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#counselors">Counselors</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="overview" class="section">
+            <h1>Welcome to the Guidance Counselor Dashboard</h1>
+            <p>Manage student information, track counseling sessions, and generate reports.</p>
+            <div class="overview-cards">
+                <div class="card">
+                    <h2>Total Students</h2>
+                    <p id="totalStudents">0</p>
+                </div>
+                <div class="card">
+                    <h2>Upcoming Sessions</h2>
+                    <p id="upcomingSessions">0</p>
+                </div>
+                <div class="card">
+                    <h2>Recent Alerts</h2>
+                    <p id="recentAlerts">None</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="students" class="section">
+            <h2>Student List</h2>
+            <input type="text" id="searchBar" placeholder="Search students...">
+            <ul id="studentList"></ul>
+        </section>
+        
+        <section id="counselors" class="section">
+            <h2>Counselor List</h2>
+            <ul id="counselorList"></ul>
+        </section>
+        
+        <section id="reports" class="section">
+            <h2>Generate Reports</h2>
+            <button id="generateReport">Generate Report</button>
+            <p id="reportStatus"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Guidance Dashboard. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
