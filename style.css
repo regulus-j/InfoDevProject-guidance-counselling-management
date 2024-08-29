@@ -70,7 +70,7 @@ main {
 }
 
 #searchBar {
-    width: 100%;
+    width: 90vw;
     padding: 10px;
     margin-bottom: 20px;
 }
